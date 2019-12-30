@@ -32,10 +32,8 @@ const Footer = () => {
         <hr />
 
         <p className="footer__text">
-          © 2019 - Developed with
-          <i style={{ color: '#dc3545', fontSize: '1.8rem' }} className="fa fa-heart px-2" />
-          by{' '}
-          <a href="https://github.com/covidev" target="_blank" rel="noopener noreferrer">
+          © {new Date().getFullYear()} - Template developed by{' '}
+          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
             Jacobo Martínez
           </a>
         </p>

@@ -2,9 +2,9 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: 'Jacobo | Developer',
-  lang: 'en', // e.g: en, es, fr, jp
-  description: 'Jacobo Official Website',
+  title: '', // e.g: 'Name | Developer'
+  lang: '', // e.g: en, es, fr, jp
+  description: '', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -28,28 +28,28 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'mososla.png',
-    title: 'An example 1',
-    info: 'xcxcxcxcxcxc',
-    info2: '11111111',
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
-    img: 'mockraft.png',
-    title: 'An example 2',
-    info: 'asdasdasdasdasdasdasdas',
-    info2: '22222222',
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
-    img: 'face-app.jpg',
-    title: 'An example 3',
-    info: 'lkjlkjkljlkjlkjkljlkjkl',
-    info2: '333333333333',
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
