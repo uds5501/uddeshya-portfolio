@@ -83,7 +83,7 @@ const Projects = () => {
                       <a
                         href={url || '#!'}
                         target="_blank"
-                        aria-label={title}
+                        aria-label="Project Link"
                         rel="noopener noreferrer"
                       >
                         <Tilt
