@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
-  const { title, lang } = headData;
+  const { title, lang, description } = headData;
 
   return (
     <>
@@ -14,7 +14,7 @@ export default () => {
         <meta charSet="utf-8" />
         <title>{title || 'Gatsby Simplefolio'}</title>
         <html lang={lang || 'en'} />
-        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+        <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
       <App />
     </>
