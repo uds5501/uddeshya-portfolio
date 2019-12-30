@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import GatsbyImage from '../GatsbyImage';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -94,11 +95,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <img
-                              className="img-fluid"
-                              src={img || '/assets/banner.png'}
-                              alt="Project"
-                            />
+                            <GatsbyImage alt={title} filename={img} />
                           </div>
                         </Tilt>
                       </a>

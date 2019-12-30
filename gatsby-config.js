@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Mososla Digital Studio`,
-        short_name: `Mososla.network`,
+        name: `Gatsby Simplefolio`,
+        short_name: `Simplefolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#02aab0`,
