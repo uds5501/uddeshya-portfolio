@@ -1,13 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import Fade from 'react-reveal/Fade';
 import Title from '../Title/Title';
+import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,18 +21,6 @@ const About = () => {
     }
   }, []);
 
-  const optimizedImg = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "profile.jpg" }) {
-        childImageSharp {
-          fixed(width: 300) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <section id="about">
       <div className="container">
@@ -42,11 +29,7 @@ const About = () => {
           <div className="col-md-6 col-sm-12">
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <Img
-                  className="img-fluid rounded shadow-lg"
-                  fixed={optimizedImg.logo.childImageSharp.fixed}
-                  alt="Profile"
-                />
+                <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </div>
