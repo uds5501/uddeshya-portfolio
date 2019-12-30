@@ -72,7 +72,7 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-8 col-sm-12">
                   <Fade
-                    left={isDesktop}
+                    right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
                     delay={1000}
