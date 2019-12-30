@@ -80,7 +80,12 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a href={url || '#!'} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={url || '#!'}
+                        target="_blank"
+                        aria-label={title}
+                        rel="noopener noreferrer"
+                      >
                         <Tilt
                           options={{
                             reverse: false,
