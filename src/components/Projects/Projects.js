@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
+import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
@@ -23,15 +24,15 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="container">
+      <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map(project => {
             const { id, title, info, info2, url, repo, img } = project;
 
             return (
-              <div className="row" key={id}>
-                <div className="col-lg-4 col-sm-12">
+              <Row key={id}>
+                <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -41,7 +42,6 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-
                       <div>
                         <p>
                           {info ||
@@ -70,8 +70,8 @@ const Projects = () => {
                       )}
                     </div>
                   </Fade>
-                </div>
-                <div className="col-lg-8 col-sm-12">
+                </Col>
+                <Col lg={8} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -101,12 +101,12 @@ const Projects = () => {
                       </a>
                     </div>
                   </Fade>
-                </div>
-              </div>
+                </Col>
+              </Row>
             );
           })}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

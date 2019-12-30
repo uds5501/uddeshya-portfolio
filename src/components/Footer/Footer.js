@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 
 const Footer = () => {
@@ -7,11 +8,10 @@ const Footer = () => {
 
   return (
     <footer className="footer navbar-static-bottom">
-      <div className="container">
+      <Container>
         <a href="#top" className="back-to-top">
           <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
         </a>
-
         <div className="social-links">
           {networks &&
             networks.map(network => {
@@ -19,7 +19,7 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={url || 'https://github.com/cobidev/react-simplefolio'}
+                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -28,16 +28,14 @@ const Footer = () => {
               );
             })}
         </div>
-
         <hr />
-
         <p className="footer__text">
           © {new Date().getFullYear()} - Template developed by{' '}
           <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
             Jacobo Martínez
           </a>
         </p>
-      </div>
+      </Container>
     </footer>
   );
 };
