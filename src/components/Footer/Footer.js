@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <a href="#top" className="back-to-top">
+        <a href="#top" aria-label="Back To Top" className="back-to-top">
           <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
         </a>
         <div className="social-links">
@@ -22,6 +22,7 @@ const Footer = () => {
                   href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
                   rel="noopener noreferrer"
                   target="_blank"
+                  aria-label={name}
                 >
                   <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
                 </a>
