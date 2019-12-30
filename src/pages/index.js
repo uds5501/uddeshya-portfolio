@@ -1,11 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import App from '../components/App';
-import { PortfolioProvider } from '../context/context';
+import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-export default () => (
-  <PortfolioProvider>
-    <App />
-  </PortfolioProvider>
-);
+export default () => {
+  const { title, lang } = headData;
+
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Gatsby Simplefolio'}</title>
+        <html lang={lang || 'en'} />
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+      </Helmet>
+      <App />
+    </>
+  );
+};

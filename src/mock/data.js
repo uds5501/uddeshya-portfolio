@@ -1,5 +1,12 @@
 import uuidv1 from 'uuid/v1';
 
+// HEAD DATA
+export const headData = {
+  title: 'Jacobo | Developer',
+  lang: 'en', // e.g: en, es, fr, jp
+  domain: 'https://cobidev.com/',
+};
+
 // HERO DATA
 export const heroData = {
   title: '',

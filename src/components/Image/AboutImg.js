@@ -30,14 +30,14 @@ const AboutImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="img-fluid rounded shadow-lg" alt={alt} fixed={imageFixed} />;
+      return <Img alt={alt} fixed={imageFixed} />;
     }}
   />
 );
 
 AboutImg.propTypes = {
-  filename: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  filename: PropTypes.string,
+  alt: PropTypes.string,
 };
 
 export default AboutImg;
