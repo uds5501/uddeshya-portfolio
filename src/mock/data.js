@@ -10,7 +10,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: '',
+  img: 'profile.jpg',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -21,30 +21,30 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    title: '',
-    info: '',
-    info2: '',
+    img: 'mososla.png',
+    title: 'An example 1',
+    info: 'xcxcxcxcxcxc',
+    info2: '11111111',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-    img: '',
   },
   {
     id: uuidv1(),
-    title: '',
-    info: '',
-    info2: '',
+    img: 'mockraft.png',
+    title: 'An example 2',
+    info: 'asdasdasdasdasdasdasdas',
+    info2: '22222222',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-    img: '',
   },
   {
     id: uuidv1(),
-    title: '',
-    info: '',
-    info2: '',
+    img: 'face-app.jpg',
+    title: 'An example 3',
+    info: 'lkjlkjkljlkjlkjkljlkjkl',
+    info2: '333333333333',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-    img: '',
   },
 ];
 
