@@ -18,7 +18,7 @@
 ✔️ Fully Responsive\
 ✔️ Valid HTML5 & CSS3\
 ✔️ Load optimization with Gatsby\
-✔️ Easy info customization
+✔️ Easy site customization\
 ✔️ Well organized documentation
 
 To view a demo example, **[click here](https://gatsby-simplefolio.netlify.com/)**\
