@@ -8,14 +8,14 @@
 </h2>
 
 ## Features
-✔️ Modern UI Design + Reveal Animations\
-✔️ One Page Layout built with React\
-✔️ Styled with Bootstrap v4.3 + Custom SCSS\
-✔️ Fully Responsive\
-✔️ Configurable color scheme\
-✔️ Image optimization with Gatsby\
-✔️ Easy site customization\
-✔️ Well organized documentation
+⚡️ Modern UI Design + Reveal Animations\
+⚡️ One Page Layout built with React\
+⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
+⚡️ Fully Responsive\
+⚡️ Configurable color scheme\
+⚡️ Image optimization with Gatsby\
+⚡️ Easy site customization\
+⚡️ Well organized documentation
 
 To view a demo example, **[click here](https://gatsby-simplefolio.netlify.com/)**\
 To view a live example, **[click here](https://cobidev.com/)**
@@ -84,44 +84,101 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 ### Step 1 - STRUCTURE
 
-Go to `/src/template.html` and fill your information, they are 5 sections:
+Go to `/src/mock/data.js` and fill your information, they are 5 objects:
 
 **Hero Section**
 
-- On `.hero-title`, put your custom title.
-- On `.hero-cta`, put your custom button cta.
-
-```html
-<!-- **** Hero Section **** -->
-<div id="hero" class="jumbotron">
-  <div class="container">
-    <h1 class="hero-title" class="load-hidden">
-      Hi, my name is <span class="text-color-main">John Doe</span>
-      <br />
-      I'm the Unknow Developer.
-    </h1>
-    <p class="hero-cta" class="load-hidden">
-      <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
-    </p>
-  </div>
-</div>
-<!-- /END Hero Section -->
+```javascript
+export const heroData = {
+  title: '', // Hello, my name is
+  name: '', // John
+  subtitle: '', // I'm the Unknown Developer.
+  cta: '', // Know more
+};
 ```
 
 **About Section**
 
+```javascript
+export const aboutData = {
+  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  paragraphOne: '',
+  paragraphTwo: '',
+  paragraphThree: '',
+  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+};
+```
 
 **Projects Section**
 
+Put as many projects object you want inside the `array`.
 
+```javascript
+export const projectsData = [
+  {
+    id: uuidv1(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: uuidv1(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  ...
+];
+```
 
 **Contact Section**
 
-
+```javascript
+export const contactData = {
+  cta: '', // call to action text for the contact section
+  btn: '', // text inside the button
+  email: '',
+};
+```
 
 **Footer Section**
 
+You can remove or add as many you social-media icons you want.\
+Just put an object with the corresponding values inside the networks `array` or remove it from there.
 
+```javascript
+export const footerData = {
+  networks: [
+    {
+      id: uuidv1(),
+      name: 'twitter',
+      url: '', // your twitter url
+    },
+    {
+      id: uuidv1(),
+      name: 'codepen',
+      url: '', // your codepen url
+    },
+    {
+      id: uuidv1(),
+      name: 'linkedin',
+      url: '', // your linkedin url
+    },
+    {
+      id: uuidv1(),
+      name: 'github',
+      url: '', // your github url
+    },
+  ],
+};
+};
+```
 
 ### Step 2 - STYLES
 
