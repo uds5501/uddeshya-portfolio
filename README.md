@@ -86,7 +86,7 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 Go to `/src/mock/data.js` and fill your information, they are 5 objects:
 
-**Hero Section**
+#### Hero Section
 
 ```javascript
 export const heroData = {
@@ -97,7 +97,9 @@ export const heroData = {
 };
 ```
 
-**About Section**
+#### About Section
+
+***Important Note***: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly. 
 
 ```javascript
 export const aboutData = {
@@ -109,7 +111,9 @@ export const aboutData = {
 };
 ```
 
-**Projects Section**
+#### Projects Section
+
+***Important Note***: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly. 
 
 Put as many projects object you want inside the `array`.
 
@@ -137,7 +141,7 @@ export const projectsData = [
 ];
 ```
 
-**Contact Section**
+#### Contact Section
 
 ```javascript
 export const contactData = {
@@ -147,7 +151,7 @@ export const contactData = {
 };
 ```
 
-**Footer Section**
+#### Footer Section
 
 You can remove or add as many you social-media icons you want.\
 Just put an object with the corresponding values inside the networks `array` or remove it from there.
@@ -192,7 +196,7 @@ $main-color: #02aab0;
 $secondary-color: #00cdac;
 ```
 
-**NOTE**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
+***Note***: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
 
 ---
 
