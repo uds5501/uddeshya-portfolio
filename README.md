@@ -37,7 +37,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites 📋
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.\
+Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
 
 ```
 node@v10.16.0 or higher
