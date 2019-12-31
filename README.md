@@ -6,8 +6,6 @@
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
-Feel free to use it as-is or customize it as much as you want. I was motivated to create this project because I wanted to contribute on something useful for the dev community :)
-
 <h2 align="center">
   <img src="https://github.com/cobidev/simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
   <br>
