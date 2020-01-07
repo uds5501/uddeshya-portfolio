@@ -3,11 +3,12 @@
 ## A clean, beautiful and responsive portfolio template for Developers
 
 <h2 align="center">
-  <img src="https://github.com/cobidev/simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
+  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
   <br>
 </h2>
 
 ## Features
+
 ⚡️ Modern UI Design + Reveal Animations\
 ⚡️ One Page Layout built with React\
 ⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
@@ -75,7 +76,7 @@ $ gatsby develop
 Once your server has started, go to this url `http://localhost:8000/` and you will see the website running on a Development Server:
 
 <h2 align="center">
-  <img src="https://github.com/cobidev/simplefolio/blob/master/examples/example.png" alt="Simplefolio" width="100%">
+  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.png" alt="Gatsby Simplefolio" width="100%">
 </h2>
 
 ---
@@ -99,7 +100,7 @@ export const heroData = {
 
 ### About Section
 
-***Important Note***: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly. 
+**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
 ```javascript
 export const aboutData = {
@@ -113,7 +114,7 @@ export const aboutData = {
 
 ### Projects Section
 
-***Important Note***: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly. 
+**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
 Put as many projects object you want inside the `array`.
 
@@ -196,7 +197,7 @@ $main-color: #02aab0;
 $secondary-color: #00cdac;
 ```
 
-***Note***: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
+**_Note_**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
 
 ---
 
