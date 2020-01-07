@@ -219,7 +219,7 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 
 ## Others versions 👥
 
-[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)
+[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
 [Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
 
 ## Technologies used 🛠️
