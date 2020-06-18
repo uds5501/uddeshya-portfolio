@@ -2,17 +2,17 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Uddeshya Singh | Full Stack Developer',
+  lang: 'en',
+  description: 'Welcome to my portfolio',
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'Welcome to my Space! I am',
+  name: 'Uddeshya Singh',
+  subtitle: 'Full Stack Developer and Machine Learning Enthusiast',
+  cta: 'Know more',
 };
 
 // ABOUT DATA
