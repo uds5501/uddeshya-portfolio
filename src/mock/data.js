@@ -17,10 +17,13 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  img: 'profile1.jpg',
+  paragraphOne:
+    'Hey, I am a pre-final year undergraduate student pursuing a Bachelor of Technology degree in Computer Science and Engineering at Harcourt Butler Technical Unviersity (HBTU), Kanpur.',
+  paragraphTwo:
+    'I have a passion for problem solving and software development with a keen interest in new technologies and enjoy working outside of my comfort zone.',
+  paragraphThree:
+    'I love Full Stack Development and you can find me mixing it up with Machine Learning from time to time!',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
@@ -88,6 +91,53 @@ export const footerData = {
   ],
 };
 
+// SKILL DATA
+export const skillData = [
+  {
+    id: uuidv1(),
+    name: 'Docker',
+  },
+  {
+    id: uuidv1(),
+    name: 'Django',
+  },
+  {
+    id: uuidv1(),
+    name: 'Flask',
+  },
+  {
+    id: uuidv1(),
+    name: 'React',
+  },
+  {
+    id: uuidv1(),
+    name: 'Machine Learning',
+  },
+  {
+    id: uuidv1(),
+    name: 'C++',
+  },
+  {
+    id: uuidv1(),
+    name: 'Problem Solving',
+  },
+  {
+    id: uuidv1(),
+    name: 'PostgreSQL',
+  },
+  {
+    id: uuidv1(),
+    name: 'Git',
+  },
+  {
+    id: uuidv1(),
+    name: 'Javascript',
+  },
+  {
+    id: uuidv1(),
+    name: 'Python',
+  },
+];
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: true, // set to false to disable the GitHub stars/fork buttons

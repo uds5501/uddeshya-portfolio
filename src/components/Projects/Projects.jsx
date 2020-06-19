@@ -8,7 +8,6 @@ import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -27,11 +26,11 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project,index) => {
+          {projects.map(project => {
             const { title, info, info2, url, repo, img } = project;
 
             return (
-              <Row key={index}>
+              <Row>
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}

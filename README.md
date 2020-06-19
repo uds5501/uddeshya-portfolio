@@ -65,6 +65,7 @@ $ git remote remove origin
 Then you can install the dependencies either using NPM or Yarn:
 
 Using NPM:
+
 ```bash
 # Install dependencies
 $ npm install
@@ -72,7 +73,9 @@ $ npm install
 # Start development server
 $ gatsby develop
 ```
+
 Using Yarn:
+
 ```bash
 # Install dependencies
 $ yarn
@@ -120,7 +123,7 @@ export const heroData = {
 
 ```javascript
 export const aboutData = {
-  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
+  img: 'profile1.jpg', // put your profile image (recommended aspect radio: square)
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
