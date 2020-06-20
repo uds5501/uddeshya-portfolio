@@ -28,7 +28,11 @@ const Skills = () => {
             {skills.map(skill => {
               const { name } = skill;
               return (
-                <Col lg={3} sm={6} className="skills-wrapper__column">
+                <Col
+                  lg={{ span: 1, offset: 1 }}
+                  sm={{ span: 4, offset: 1 }}
+                  className="skills-wrapper__column"
+                >
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}

@@ -47,6 +47,7 @@ const About = () => {
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
                       href={resume}
+                      download="uddeshyaresume.pdf"
                     >
                       Resume
                     </a>

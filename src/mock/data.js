@@ -1,4 +1,5 @@
 import uuidv1 from 'uuid/v1';
+import resume from './resume.pdf';
 
 // HEAD DATA
 export const headData = {
@@ -24,37 +25,47 @@ export const aboutData = {
     'I have a passion for problem solving and software development with a keen interest in new technologies and enjoy working outside of my comfort zone.',
   paragraphThree:
     'I love Full Stack Development and you can find me mixing it up with Machine Learning from time to time!',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume,
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'yay.png',
+    title: 'Google Summer of Code 2019 Work Product',
+    info: 'Improved UI of Eventyay platform',
+    info2:
+      'Introduced new schemas in the backend and implemented new features taxes, billing and route permissions domains',
+    info3:
+      'Integrated multiple payment gateways into the Flask system like Omise, PayTM and Alipay',
+    url: 'https://gist.github.com/uds5501/03b27984cf345666f07f0b0534c38c9e',
+    repofront: 'https://github.com/uds5501/open-event-frontend',
+    repoback: 'https://github.com/uds5501/open-event-server',
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'cooking.png',
+    title: "What's Cooking?",
+    info: 'Deployed a react app on Netlify using Circle CI to communicate with a Django backend',
+    info2: 'Hosted the Django Rest API server on heroku ',
+    info3: 'Created Machine Learning Pipeline and used Docker for quick client setup',
+    url: 'https://whats-cooking-frontend-cd.netlify.app/',
+    repofront: 'https://github.com/uds5501/whats-cooking-frontend',
+    repoback: 'https://github.com/uds5501/whats-cooking-server',
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'scribble.png',
+    title: 'ScribbleIt',
+    info:
+      'ScribbleIt helps you to transcribe and summarise your daily meetings, classes and meetups.',
+    info2:
+      'Implemented a Flask Backend to communicate with a Vanilla JS Frontend using AJAX queries',
+    info3:
+      'Used Microsoft Cognitive API to implement Speech to Text with a refresh rate of 1 second.',
+    url: 'https://devfolio.co/submissions/scribbleit',
+    repo: 'https://github.com/uds5501/scribe',
   },
 ];
 
