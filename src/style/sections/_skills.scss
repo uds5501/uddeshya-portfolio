@@ -1,0 +1,43 @@
+#skills {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 100%,
+    $secondary-color 0%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 10px;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+  padding-top: 10%;
+
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .skills-wrapper {
+    @include respond(phone) {
+      padding-bottom: 5rem;
+    }
+    &__column {
+      display: inline-block;
+      height: auto;
+      width: 100%;
+    }
+    &__text{  
+      float: left;
+      font-size: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      @include respond(phone) {
+        margin-bottom: 1rem !important;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

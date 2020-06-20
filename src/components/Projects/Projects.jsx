@@ -8,7 +8,6 @@ import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -27,11 +26,11 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project,index) => {
-            const { title, info, info2, url, repo, img } = project;
+          {projects.map(project => {
+            const { title, info, info2, info3, url, repofront, img, repoback, repo } = project;
 
             return (
-              <Row key={index}>
+              <Row>
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
@@ -47,8 +46,39 @@ const Projects = () => {
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{info2}</p>
+                        <p className="mb-4">{info3}</p>
                       </div>
+                      {repofront && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repofront}
+                        >
+                          Frontend Source
+                        </a>
+                      )}
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source
+                        </a>
+                      )}
+                      {repoback && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repoback}
+                        >
+                          Backend Source
+                        </a>
+                      )}
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -57,17 +87,6 @@ const Projects = () => {
                       >
                         See Live
                       </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
                     </div>
                   </Fade>
                 </Col>
