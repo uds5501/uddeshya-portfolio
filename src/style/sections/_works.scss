@@ -1,0 +1,26 @@
+#works {
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .works-wrapper{
+    &__container{
+      border-color: rgba(0, 0, 0, 0.08);
+      border-style: solid;
+    }
+  }
+  .vertical-timeline.vertical-timeline-custom-line::before {
+    background: #424242;
+  }
+  /* Icon container's border */
+  .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px $primary-color, inset 0 2px 0 $secondary-color, 0 3px 0 4px $secondary-color;
+  }
+  
+  .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+
+  
+}

@@ -149,6 +149,76 @@ export const skillData = [
     name: 'Python',
   },
 ];
+
+// EXPERIENCE DATA
+export const worksData = [
+  {
+    date: '11/2019 – 02/2020',
+    title: 'Google Code In 2019 Mentor',
+    company: 'FOSSASIA and Tensorflow',
+    points: [
+      {
+        data:
+          "Took initiative in assigning the new developers tasks according to the project's critical needs and the developer's strengths.",
+      },
+    ],
+    location: 'Remote',
+  },
+  {
+    date: '09/2019 – 02/2020',
+    title: 'Codeheat Mentor',
+    company: 'FOSSASIA',
+    points: [
+      {
+        data: 'Regularly reviewed Pull Requests and maintained the repository.',
+      },
+      {
+        data: 'Evaluated the students according to their contribution quality',
+      },
+      {
+        data:
+          'Managed the introduction of project to newcomers and guided them in their ongoing technical implementations',
+      },
+    ],
+    location: 'Remote',
+  },
+  {
+    date: '05/2019 – 08/2019',
+    title: 'Google Summer of Code 2019 Developer',
+    company: 'FOSSASIA',
+    points: [
+      {
+        data: 'Made the Eventyay platform stable by bug fixing at both frontend and backend',
+      },
+      {
+        data:
+          'Implemented new features in Orders, Tickets, Taxes, Payment Gateways and User Experience domains',
+      },
+      {
+        data:
+          'Improved the tests in the system for bug-free continuous integration and earned the completion certificate.',
+      },
+    ],
+    location: 'Remote',
+    link: 'https://gist.github.com/uds5501/03b27984cf345666f07f0b0534c38c9e',
+  },
+  {
+    date: '06/2018 – 07/2018',
+    title: 'Data Structure and Algorithm Content Writer',
+    company: 'OpenGenus Foundation',
+    points: [
+      {
+        data:
+          'Implemented Machine Learning, Artificial Intelligence and Game Theory algorithms and elaborated them in blogs',
+      },
+      {
+        data: 'Pushed the respective implementations on GitHub page cosmos',
+      },
+    ],
+    location: 'Remote',
+    link: 'https://github.com/OpenGenus/cosmos/pulls?q=is%3Apr+author%3Auds5501',
+  },
+];
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: true, // set to false to disable the GitHub stars/fork buttons

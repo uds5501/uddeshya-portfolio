@@ -33,6 +33,7 @@
     "react-helmet": "^5.2.1",
     "react-reveal": "^1.2.2",
     "react-tilt": "^0.1.4",
+    "react-vertical-timeline-component": "^3.0.2",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
