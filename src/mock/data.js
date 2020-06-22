@@ -73,7 +73,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'singhuddeshyaofficial@gmail.com',
 };
 
 // FOOTER DATA
@@ -82,22 +82,17 @@ export const footerData = {
     {
       id: uuidv1(),
       name: 'twitter',
-      url: '',
-    },
-    {
-      id: uuidv1(),
-      name: 'codepen',
-      url: '',
+      url: 'https://twitter.com/uds5501',
     },
     {
       id: uuidv1(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/singhuddeshya5501/',
     },
     {
       id: uuidv1(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/uds5501',
     },
   ],
 };

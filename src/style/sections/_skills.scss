@@ -23,10 +23,12 @@
     @include respond(phone) {
       padding-bottom: 5rem;
     }
+    
     &__column {
       display: inline-block;
       height: auto;
       width: 100%;
+      
     }
     &__text{  
       float: left;
@@ -37,6 +39,11 @@
       }
       @include respond(tab-land) {
         margin-bottom: 2rem;
+      }
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.5);
+        color: darken($color: $secondary-color, $amount: 0);
       }
     }
   }
