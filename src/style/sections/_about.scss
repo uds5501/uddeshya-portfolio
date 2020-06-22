@@ -58,7 +58,13 @@
           font-size: 1.6rem;
           text-align: center;
         }
-
+        a{
+          color: white;
+          transition: .4s ease-in-out;
+          &:hover{
+            color: $primary-color;
+          }
+        }
         &--important {
           background: darken($secondary-color, 1%);
           display: inline-block;
