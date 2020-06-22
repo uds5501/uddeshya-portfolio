@@ -26,6 +26,7 @@ export const aboutData = {
   paragraphThree:
     'I love Full Stack Development and you can find me mixing it up with Machine Learning from time to time!',
   resume,
+  cf: 'https://codeforces.com/profile/uddeshya.singh',
 };
 
 // PROJECTS DATA
