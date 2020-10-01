@@ -46,6 +46,16 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
+    img: 'fitmeup.png',
+    title: 'FitMeUp!',
+    info: 'A data visualization dashboard built on React Hooks',
+    info2: 'Uses Google REST Api for OAuth authorization and Google Fit data retrieval.',
+    info3: 'Implements user persistance using cookies and visualization using high charts.',
+    url: 'https://fitmeup.netlify.app/',
+    repo: 'https://github.com/uds5501/fitmeup-oauth-visualizer',
+  },
+  {
+    id: uuidv1(),
     img: 'cooking.png',
     title: "What's Cooking?",
     info: 'Deployed a react app on Netlify using Circle CI to communicate with a Django backend',
@@ -144,10 +154,29 @@ export const skillData = [
     id: uuidv1(),
     name: 'Python',
   },
+  {
+    id: uuidv1(),
+    name: 'Go',
+  },
 ];
 
 // EXPERIENCE DATA
 export const worksData = [
+  {
+    date: '08/2020 – Present',
+    title: 'Fullstack developer intern',
+    company: 'Trell',
+    points: [
+      {
+        data: 'Working on Code and Logic migration from PHP to Go',
+      },
+      {
+        data:
+          'Assigned to Automation division to work on scripts development and deployement on AWS and handling the scale using Autoscalers',
+      },
+    ],
+    location: 'Remote/Bangalore',
+  },
   {
     date: '11/2019 – 02/2020',
     title: 'Google Code In 2019 Mentor',
